@@ -1,3 +1,9 @@
+//Aluno: Joyce Oliveira dos Santos
+//Matricula: 20210046341
+//Curso: Sistemas de Informação
+//Orientador: Dr. Márcio Barboza 
+//Tema: Remoção de ruídos em sinais unidimensionais usando Variação Total
+
 clc
 clear
 
