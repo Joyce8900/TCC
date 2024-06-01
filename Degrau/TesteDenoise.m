@@ -24,3 +24,4 @@ xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
 legend('Sinal Original', 'Sinal com Ruído Suprimido', 'FontSize', 12); % Aumenta o tamanho da legenda
 
+print('graficoDegrau', '-dpng'); % Salva como PNG
