@@ -16,7 +16,7 @@ alpha = 4;
 T = lambda/2;
 for k = 1:Nit
 x = y - [-z(1) -diff(z) z(end)]; % y - D’ z
-J(k) = sum(abs(x-y).^2) + lambda * sum(abs(diff(x)));
+J(k) = norm(x-y).^2 + lambda * norm(diff(x),1);
 z = z + 1/alpha * diff(x); % z + 1/alpha D z
 z = max(min(z,T),-T); % clip(z,T)
 end

@@ -32,7 +32,7 @@ texto_anotacao = '  Lambda = 0.90';
 text(x_ponto, y_ponto, texto_anotacao);
 
 
-title('Curva L da função Degrau', 'FontSize', 14); % Aumenta o tamanho do título
+%title('Curva L da função Degrau', 'FontSize', 14); % Aumenta o tamanho do título
 
 xlabel('||Dx||_1^1', 'FontSize', 14); % Altera o label do eixo X
 ylabel('||x - y||_2^2', 'FontSize', 14); % Altera o label do eixo Y
