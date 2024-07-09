@@ -1,17 +1,17 @@
 function [x,J] = denoiseTV(y,lambda,Nit)
 % [x,J] = denoiseTV(y,lambda,a,Nit)
-% Total variation filtering (denoising) using
-% iterative clipping algorithm.
-% INPUT
-% y - noisy signal (row vector)
-% lambda - regularization parameter
-% Nit - number of iterations
-% OUTPUT
-% x - result of denoising
-% J - objective function
-J = zeros(1,Nit); % objective function
+% Filtragem de variação total (remoção de ruído) usando
+% algoritmo de corte iterativo.
+% ENTRADA
+% y - sinal ruidoso (vetor linha)
+% lambda - parâmetro de regularização
+% Nit - número de iterações
+% SAÍDA
+% x - resultado da remoção de ruído
+% J - função objetivo
+J = zeros(1,Nit); % função objetivo
 N = length(y);
-z = zeros(1,N-1); % initialize z
+z = zeros(1,N-1); % inicializa z
 alpha = 4;
 T = lambda/2;
 for k = 1:Nit

@@ -32,8 +32,6 @@ figure(2)
 plot(degrau, 'LineWidth', 2); % Função original
 hold on;
 plot(y, 'LineWidth', 2); % Grafico da função com ruido
-
-
 %title('Resultado da remoção de ruído da função degrau', 'FontSize', 14); % Aumenta o tamanho do título
 xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
