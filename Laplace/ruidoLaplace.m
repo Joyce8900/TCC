@@ -1,3 +1,8 @@
+%Aluno: Joyce Oliveira dos Santos
+%Matricula: 20210046341
+%Curso: Sistemas de Informação
+%Orientador: Dr. Márcio Barboza
+%Tema: Remoção de ruídos em sinais unidimensionais usando Variação Total
 clc
 clear
 close all
@@ -15,3 +20,6 @@ ylabel('Amplitude');
 legend('Sinal Original', 'Sinal com Ruído');
 
 save  laplaceRuido.mat sinal_Laplace_Ruido
+
+
+
