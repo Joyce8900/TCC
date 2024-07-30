@@ -22,15 +22,32 @@ end
 
 plot(J2,J1,'LineWidth', 2)
 
-lambdaOtimo = lambda(90)
+lambdaOtimo1 = lambda(90)
+lambdaOtimo2 = lambda(57)
+lambdaOtimo3 = lambda(25)
 
-indice = 90; %
-x_ponto = J2(indice);
-y_ponto = J1(indice);
+indice1 = 90; %
+indice2 = 57; %
+indice3 = 25; %
+
+x1 = J2(indice1);
+y1 = J1(indice1);
+x2 = J2(indice2);
+y2 = J1(indice2);
+x3 = J2(indice3);
+y3 = J1(indice3);
+
 hold on
-plot(x_ponto, y_ponto,'*','LineWidth', 2)
-texto_anotacao = '  Lambda = 0.90';
-text(x_ponto, y_ponto, texto_anotacao);
+plot(x1, y1,'*','LineWidth', 2)
+plot(x2, y2,'*','LineWidth', 2)
+plot(x3, y3,'*','LineWidth', 2)
+texto_anotacao1 = '  Lambda = 0.90';
+texto_anotacao2 = '  Lambda = 0.57';
+texto_anotacao3 = '  Lambda = 0.25';
+text(x1, y1, texto_anotacao1);
+text(x2, y2, texto_anotacao2);
+text(x3, y3, texto_anotacao3);
+
 xlabel('||Dx||_1^1', 'FontSize', 14); % Altera o label do eixo X
 ylabel('||x - y||_2^2', 'FontSize', 14); % Altera o label do eixo Y
 

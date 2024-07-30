@@ -22,13 +22,13 @@ hold on;
 plot(sinal_quadrado, 'LineWidth', 2); % Aumenta o tamanho da linha da função
 xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
-legend( 'Sinal com Ruído Suprimido','Sinal Original', 'FontSize', 12); % Aumenta o tamanho da legenda
+legend(  "Sinal com Ruído Suprimido",'Sinal Original', 'FontSize', 12); % Aumenta o tamanho da legenda
 hold off
 figure(2)
 plot(sinal_Laplace_Ruido, 'LineWidth', 2)
 hold on;
 plot(x, 'LineWidth', 2); % Grafico da função com ruido
 
-xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
+xlabel('Samples', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
-legend( 'Sinal com Ruído','Sinal Original', 'FontSize', 12); %
+legend( 'Signal with Noise','Original Signal', 'FontSize', 12); %

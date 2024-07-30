@@ -6,6 +6,7 @@
 
 clc
 clear
+close all
 degrau = zeros(1, 100);
 degrau(50:end) = 1; % Sinal degrau
 load degrauRuido.mat
@@ -16,13 +17,13 @@ Nit=100;
 
 [x,J] = denoiseTV(y,lambda,Nit);
 
-plot(x, 'LineWidth', 2); % Aumenta o tamanho da linha da função
-hold on;
 plot(degrau, 'LineWidth', 2); % Aumenta o tamanho da linha da função
+hold on;
+plot(x, 'LineWidth', 2); % Aumenta o tamanho da linha da função
 %title('Resultado da remoção de ruído da função degrau', 'FontSize', 14); % Aumenta o tamanho do título
-xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
+xlabel('Samples', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
-legend('Sinal Original', 'Sinal com Ruído Removido', 'FontSize', 12); % Aumenta o tamanho da legenda
+legend('Sinal Original', 'Sinal com Ruido Removido', 'FontSize', 12); % Aumenta o tamanho da legenda
 
 print('graficoDegrau', '-dpng'); % Salva como PNG
 
@@ -33,6 +34,6 @@ plot(degrau, 'LineWidth', 2); % Função original
 hold on;
 plot(y, 'LineWidth', 2); % Grafico da função com ruido
 %title('Resultado da remoção de ruído da função degrau', 'FontSize', 14); % Aumenta o tamanho do título
-xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
+xlabel('Samples', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
-legend('Sinal Original', 'Sinal com Ruído', 'FontSize', 12); %
+legend('Original Signal', 'Signal with Noise', 'FontSize', 12); %

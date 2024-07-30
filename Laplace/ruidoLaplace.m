@@ -11,13 +11,12 @@ t = linspace(0, 4*pi, 100);% Vetor de tempo de 0 a 4*pi com 100 pontos
 sinal_quadrado = 2 * (mod(t, 2*pi) < pi) - 1;% Sinal de onda quadrada
 ruido_gaussiano = 0.2 * randn(size(sinal_quadrado)); % Ruído gaussiano com média 0 e desvio padrão 0.2
 sinal_Laplace_Ruido= sinal_quadrado + ruido_gaussiano; % Adicionando o ruído ao sinal
-plot(sinal_quadrado);
+plot(sinal_quadrado, 'LineWidth', 2);
 hold on;
-plot(sinal_Laplace_Ruido);
-%title('Sinal de Laplace com Ruído Gaussiano');
-xlabel('Amostras');
+plot(sinal_Laplace_Ruido, 'LineWidth', 2);
+xlabel('Samples');
 ylabel('Amplitude');
-legend('Sinal Original', 'Sinal com Ruído');
+legend('Original Signal', 'Signal with Noise', 'FontSize', 12);
 
 save  laplaceRuido.mat sinal_Laplace_Ruido
 

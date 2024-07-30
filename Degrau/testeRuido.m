@@ -15,9 +15,9 @@ sinal_Degrau_Ruido= degrau + ruido_gaussiano; % Adicionando o ruído ao sinal
 plot(degrau);
 hold on;
 plot(sinal_Degrau_Ruido);
-title('Sinal de Degrau com Ruído Gaussiano');
-xlabel('Amostras');
+
+xlabel('Samples');
 ylabel('Amplitude');
-legend('Sinal Original', 'Sinal com Ruído');
+legend('Original Signal', 'Signal with Noise');
 
 save  degrauRuido.mat sinal_Degrau_Ruido

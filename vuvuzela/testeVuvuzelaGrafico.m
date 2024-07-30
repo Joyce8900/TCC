@@ -1,5 +1,3 @@
-
-
 clear
 clc
 pkg load signal
@@ -32,8 +30,8 @@ hold on;
 plot(t_offset, y1, 'LineWidth', 1); % Plota y com um deslocamento no eixo x
 hold off;
 
-xlabel('Tempo (s)');
+xlabel('Time (s)');
 ylabel('Amplitude');
-legend('Sinal sem vuvuzela', 'Sinal com vuvuzela');
+legend('Signal without vuvuzela', 'Signal with vuvuzela', 'FontSize', 12);
 %title('Gráfico de x e y sem sobreposição');
 
