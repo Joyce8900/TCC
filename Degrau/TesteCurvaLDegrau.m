@@ -22,11 +22,11 @@ end
 
 plot(J2,J1,'LineWidth', 2)
 
-lambdaOtimo1 = lambda(90)
+lambdaOtimo1 = lambda(100)
 lambdaOtimo2 = lambda(57)
 lambdaOtimo3 = lambda(25)
 
-indice1 = 90; %
+indice1 = 100; %
 indice2 = 57; %
 indice3 = 25; %
 
@@ -41,7 +41,7 @@ hold on
 plot(x1, y1,'*','LineWidth', 2)
 plot(x2, y2,'*','LineWidth', 2)
 plot(x3, y3,'*','LineWidth', 2)
-texto_anotacao1 = '  Lambda = 0.90';
+texto_anotacao1 = '  Lambda = 1';
 texto_anotacao2 = '  Lambda = 0.57';
 texto_anotacao3 = '  Lambda = 0.25';
 text(x1, y1, texto_anotacao1);

@@ -12,7 +12,7 @@ degrau(50:end) = 1; % Sinal degrau
 load degrauRuido.mat
 
 y=sinal_Degrau_Ruido;
-lambda=0.9;
+lambda=1;
 Nit=100;
 
 [x,J] = denoiseTV(y,lambda,Nit);
