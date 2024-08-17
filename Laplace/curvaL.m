@@ -24,7 +24,7 @@ end
 
 plot(J2,J1,'LineWidth', 2)
 
-indice1 = 90; %
+indice1 = 200; %
 indice2 = 57; %
 indice3 = 25; %
 x_ponto1 = J2(indice1);
@@ -38,7 +38,7 @@ plot(x_ponto1, y_ponto1,'*','LineWidth', 2)
 plot(x_ponto2, y_ponto2,'*','LineWidth', 2)
 plot(x_ponto3, y_ponto3,'*','LineWidth', 2)
 
-texto_anotacao1 = '  Lambda = 0.90';
+texto_anotacao1 = '  Lambda = 2.0';
 texto_anotacao2 = '  Lambda = 0.57';
 texto_anotacao3 = '  Lambda = 0.25';
 

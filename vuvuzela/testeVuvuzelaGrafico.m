@@ -7,14 +7,15 @@ pkg load signal
 Sinal_vuvuzela = S(100000:end, 1).'; % "remove o início da amostra"
 
 y = Sinal_vuvuzela;
-lambda = 0.35;
+lambda = 1;
 Nit = 100;
 
 [x, J] = denoiseTV(y, lambda, Nit);
 
 % Reproduza o áudio
-sound(x, Fe); % som sem ruido
+
 sound(y, Fe); % som original
+sound(x, Fe); % som sem ruido
 
 % Selecione as amostras que você deseja plotar
 x1 = x(1:5*Fe);
@@ -34,4 +35,4 @@ xlabel('Time (s)');
 ylabel('Amplitude');
 legend('Signal without vuvuzela', 'Signal with vuvuzela', 'FontSize', 12);
 %title('Gráfico de x e y sem sobreposição');
-
+audiowrite('vuvuzela1.wav', x, Fe);

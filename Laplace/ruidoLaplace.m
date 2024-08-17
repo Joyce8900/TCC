@@ -14,9 +14,9 @@ sinal_Laplace_Ruido= sinal_quadrado + ruido_gaussiano; % Adicionando o ruído ao
 plot(sinal_quadrado, 'LineWidth', 2);
 hold on;
 plot(sinal_Laplace_Ruido, 'LineWidth', 2);
-xlabel('Samples');
+xlabel('Amostras');
 ylabel('Amplitude');
-legend('Original Signal', 'Signal with Noise', 'FontSize', 12);
+legend('Sinal Original', 'Sinal com Ruido', 'FontSize', 12);
 
 save  laplaceRuido.mat sinal_Laplace_Ruido
 
