@@ -15,7 +15,7 @@ load laplaceRuido.mat
 y = sinal_Laplace_Ruido;
 
 % Parâmetros de entrada
-lambda = 0.57;
+lambda = 0.25;
 Nit = 100;
 
 % Remoção de ruído
@@ -28,7 +28,7 @@ hold on;
 plot(t, x, 'LineWidth', 2); % Aumenta o tamanho da linha da função
 xlabel('Amostras', 'FontSize', 14); % Aumenta o tamanho do label do eixo x
 ylabel('Amplitude', 'FontSize', 14); % Aumenta o tamanho do label do eixo y
-legend('Sinal Original', 'Sinal com Ruído Removido', 'FontSize', 12); % Corrigido a ordem da legenda
+legend('Sinal Original', 'Sinal com Ruído Removido', 'FontSize', 10); % Corrigido a ordem da legenda
 hold off
 
 % Plotando o sinal com ruído e o sinal com ruído removido
