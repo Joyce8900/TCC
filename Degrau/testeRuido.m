@@ -16,8 +16,8 @@ plot(degrau);
 hold on;
 plot(sinal_Degrau_Ruido);
 
-xlabel('Samples');
+xlabel('Amostras');
 ylabel('Amplitude');
-legend('Original Signal', 'Signal with Noise');
+legend('Sinal Original', 'Sinal com Ruido');
 
 save  degrauRuido.mat sinal_Degrau_Ruido
